@@ -1,0 +1,7 @@
+name: Safer Rancher
+description: |
+  Backup script for Rancher.
+version: beta
+category: Backup
+maintainer: "Pierre-Nicolas Tollitte <pierrenicolas.tollitte@gmail.com>"
+license: Apache License 2.0

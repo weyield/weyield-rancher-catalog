@@ -1,0 +1,34 @@
+version: '0'
+catalog:
+  name: "Safer Rancher"
+  version: "master"
+  description: "Backup script for Rancher"
+  minimum_rancher_version: v1.6.10
+  questions:
+    - variable: "BACKUP_ROOT"
+      description: "Root directory of the backups (on the host machine), all files are stored here"
+      label: "Backup root directory"
+      type: "string"
+      required: true
+      default: "/root/backup"
+    - variable: "RANCHER_URL"
+      description: "URL of the rancher API (v2)"
+      label: "Rancher API URL"
+      type: "string"
+      required: true
+    - variable: "RANCHER_ACCESS_KEY"
+      description: "Rancher API's access key"
+      label: "Rancher access key"
+      type: "string"
+      required: true
+      default: ""
+    - variable: "RANCHER_SECRET_KEY"
+      description: "Rancher API's secret key"
+      label: "Rancher secret key"
+      type: "string"
+      required: true
+      default: ""
+
+safer:
+  scale: 1
+
